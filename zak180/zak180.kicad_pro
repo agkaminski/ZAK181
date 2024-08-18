@@ -394,6 +394,22 @@
     [
       "60a54ca7-49fc-4005-bb61-fc7fc4ae3170",
       "floppy"
+    ],
+    [
+      "10d96c99-6c47-4ff2-8f09-d84fcc76eff9",
+      "timer"
+    ],
+    [
+      "1a7f8631-20f0-471d-ab8f-15a03c343af4",
+      "pio"
+    ],
+    [
+      "b0fcc0c5-5c59-4bef-8b1b-5c2684ba3f0d",
+      "vga"
+    ],
+    [
+      "0bc6fd8f-001b-40d5-aa7a-728fb33c946c",
+      "sound"
     ]
   ],
   "text_variables": {}
