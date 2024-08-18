@@ -1,0 +1,89 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 96.52 88.9)
+		(size 55.88 43.18)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "60a54ca7-49fc-4005-bb61-fc7fc4ae3170")
+		(property "Sheetname" "floppy"
+			(at 96.52 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "floppy.kicad_sch"
+			(at 96.52 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 53.34 54.61)
+		(size 38.1 30.48)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f772451e-6b0a-44d2-8d0b-110d70bebcb8")
+		(property "Sheetname" "cpu"
+			(at 53.34 53.8984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "cpu.kicad_sch"
+			(at 53.34 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)
