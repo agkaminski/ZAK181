@@ -5784,6 +5784,12 @@
 		(uuid "95c29ec6-9b97-4a93-b56d-f64601ae7f51")
 	)
 	(junction
+		(at 165.1 100.33)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9e340bb3-1154-4d18-b8dc-996f3c7f0b6d")
+	)
+	(junction
 		(at 201.93 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5932,12 +5938,12 @@
 		(uuid "72df81b8-44de-4c50-af7a-e74b6c7fe8a0")
 	)
 	(no_connect
-		(at 81.28 125.73)
-		(uuid "8f091f19-50a5-40b7-a114-662e3726e7a4")
-	)
-	(no_connect
 		(at 81.28 114.3)
 		(uuid "9527c0f1-fd7b-46db-a3ce-d5495d0d7e79")
+	)
+	(no_connect
+		(at 252.73 63.5)
+		(uuid "a07e7bb6-1eef-4fba-b43d-7e665119792b")
 	)
 	(no_connect
 		(at 121.92 120.65)
@@ -5958,10 +5964,6 @@
 	(no_connect
 		(at 121.92 116.84)
 		(uuid "cd852d7f-98db-45b3-a137-fbf33fb38111")
-	)
-	(no_connect
-		(at 81.28 128.27)
-		(uuid "fa029eaa-3a53-437c-9663-3a094df5b5f7")
 	)
 	(bus_entry
 		(at 66.04 55.88)
@@ -6521,6 +6523,16 @@
 	)
 	(wire
 		(pts
+			(xy 165.1 100.33) (xy 165.1 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14c76d5d-480c-4d4e-8393-88cfdee9a2ed")
+	)
+	(wire
+		(pts
 			(xy 251.46 39.37) (xy 252.73 39.37)
 		)
 		(stroke
@@ -6661,7 +6673,7 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 58.42) (xy 175.26 58.42)
+			(xy 172.72 58.42) (xy 189.23 58.42)
 		)
 		(stroke
 			(width 0)
@@ -6798,6 +6810,16 @@
 			(type default)
 		)
 		(uuid "275f36c3-7d35-4bd1-8ecf-27284838e669")
+	)
+	(wire
+		(pts
+			(xy 165.1 96.52) (xy 172.72 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "289058a5-9b33-4aeb-98b8-28e6eaf73d19")
 	)
 	(wire
 		(pts
@@ -7121,6 +7143,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 128.27) (xy 81.28 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ef5dc05-90ac-49a1-a7c1-36d1c283993d")
+	)
+	(wire
+		(pts
 			(xy 195.58 52.07) (xy 203.2 52.07)
 		)
 		(stroke
@@ -7341,7 +7373,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 71.12) (xy 172.72 71.12)
+			(xy 175.26 71.12) (xy 172.72 71.12)
 		)
 		(stroke
 			(width 0)
@@ -7401,7 +7433,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 58.42) (xy 175.26 116.84)
+			(xy 189.23 58.42) (xy 189.23 116.84)
 		)
 		(stroke
 			(width 0)
@@ -7811,6 +7843,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 125.73) (xy 81.28 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7dbbe8c4-101d-42e5-9fb0-b493051f2bae")
+	)
+	(wire
+		(pts
 			(xy 121.92 45.72) (xy 133.35 45.72)
 		)
 		(stroke
@@ -7871,7 +7913,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 116.84) (xy 134.62 116.84)
+			(xy 189.23 116.84) (xy 134.62 116.84)
 		)
 		(stroke
 			(width 0)
@@ -8081,7 +8123,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 172.72 68.58)
+			(xy 175.26 68.58) (xy 172.72 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8641,7 +8683,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 63.5) (xy 172.72 63.5)
+			(xy 175.26 63.5) (xy 172.72 63.5)
 		)
 		(stroke
 			(width 0)
@@ -8808,6 +8850,16 @@
 			(type default)
 		)
 		(uuid "cf01b71d-5539-418d-8e58-36c092de206f")
+	)
+	(wire
+		(pts
+			(xy 165.1 100.33) (xy 201.93 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfce87a4-7428-46e4-867d-434c4d32a7d5")
 	)
 	(wire
 		(pts
@@ -9161,7 +9213,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 66.04) (xy 172.72 66.04)
+			(xy 175.26 66.04) (xy 172.72 66.04)
 		)
 		(stroke
 			(width 0)
@@ -9271,7 +9323,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 100.33) (xy 201.93 100.33)
+			(xy 121.92 100.33) (xy 165.1 100.33)
 		)
 		(stroke
 			(width 0)
@@ -9289,6 +9341,52 @@
 		)
 		(uuid "ff3219df-11de-4c92-a5c1-3e7edb595f2c")
 	)
+	(rectangle
+		(start 227.33 115.57)
+		(end 280.67 165.1)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 534ec565-5ec0-4907-bddc-527410a42a4b)
+	)
+	(rectangle
+		(start 227.33 24.13)
+		(end 270.51 73.66)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid ba43427b-e053-41bd-ad46-6039d38e20e1)
+	)
+	(rectangle
+		(start 41.91 152.4)
+		(end 78.74 186.69)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid d3be2be4-b76e-4712-9003-ad80c3b7b635)
+	)
+	(text "RAM is everything that's not ROM nor VRAM"
+		(exclude_from_sim no)
+		(at 250.698 163.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "3ba39750-b54c-4535-8fed-e59f1f618360")
+	)
 	(text "Internal I/O"
 		(exclude_from_sim no)
 		(at 180.086 54.61 0)
@@ -9298,6 +9396,26 @@
 			)
 		)
 		(uuid "d1b922f6-c777-429e-a456-e34a034437ce")
+	)
+	(text "ROM disable circuit"
+		(exclude_from_sim no)
+		(at 248.666 27.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "eb68c56d-0688-4c98-9398-aba146cf935d")
+	)
+	(text "VBLANK edge detection\nINT is level sensitive"
+		(exclude_from_sim no)
+		(at 57.15 183.388 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "ef94ad87-5405-4ab2-bd46-6f862657b78d")
 	)
 	(label "A1"
 		(at 133.35 88.9 180)
@@ -9375,6 +9493,17 @@
 			(justify left bottom)
 		)
 		(uuid "1ae65cb1-df2c-4908-af16-4934f57da467")
+	)
+	(label "{slash}ROMDIS"
+		(at 175.26 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1daca7f0-e022-4c3c-81a0-e98eeed28db1")
 	)
 	(label "A5"
 		(at 146.05 58.42 0)
@@ -9750,6 +9879,17 @@
 		)
 		(uuid "f0bf9a79-7ba4-4369-8694-0310252ac6d4")
 	)
+	(label "~{VBLANKACK}"
+		(at 175.26 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f0d59c82-03f9-45fe-8288-da608f57d571")
+	)
 	(label "A15"
 		(at 195.58 44.45 0)
 		(fields_autoplaced yes)
@@ -9809,7 +9949,7 @@
 	)
 	(hierarchical_label "~{FLOPPY}"
 		(shape output)
-		(at 177.8 71.12 0)
+		(at 175.26 71.12 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9891,6 +10031,18 @@
 		)
 		(uuid "2c03afa4-3239-41c9-a0ac-383cc9506926")
 	)
+	(hierarchical_label "~{RTS0}"
+		(shape output)
+		(at 40.64 125.73 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e8d4c45-6327-48c6-af40-49acde1f0ff3")
+	)
 	(hierarchical_label "CLK"
 		(shape output)
 		(at 77.47 71.12 180)
@@ -9914,6 +10066,18 @@
 			(justify right)
 		)
 		(uuid "3d30079e-7f44-4e87-950b-51d4f64dec62")
+	)
+	(hierarchical_label "~{CTS0}"
+		(shape input)
+		(at 40.64 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3f50d2f6-185f-422b-b240-1ed70ea039d9")
 	)
 	(hierarchical_label "A[19..0]"
 		(shape output)
@@ -9989,7 +10153,7 @@
 	)
 	(hierarchical_label "~{KEYBOARD}"
 		(shape output)
-		(at 177.8 63.5 0)
+		(at 175.26 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10001,7 +10165,7 @@
 	)
 	(hierarchical_label "~{PIO}"
 		(shape output)
-		(at 177.8 66.04 0)
+		(at 175.26 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10095,9 +10259,21 @@
 		)
 		(uuid "c8a2ee2d-8a25-46c0-8ef6-78f8c80614ae")
 	)
+	(hierarchical_label "~{MREQ}"
+		(shape output)
+		(at 172.72 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d27d5279-9c5c-474f-9aa2-f1fea49d8cdc")
+	)
 	(hierarchical_label "~{SOUND}"
 		(shape output)
-		(at 177.8 68.58 0)
+		(at 175.26 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font

@@ -414,6 +414,18 @@
     [
       "4f3a94dd-6ba3-4d57-a50e-f1d8e3084925",
       "keyboard"
+    ],
+    [
+      "516e3187-6836-4ba1-8de7-3bdb26e69da6",
+      "serial"
+    ],
+    [
+      "97240a4e-fd40-4264-b941-052449b17e33",
+      "memory"
+    ],
+    [
+      "5acecfb9-557c-4410-b586-8165691e0a4a",
+      "rom"
     ]
   ],
   "text_variables": {}
