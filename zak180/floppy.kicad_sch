@@ -5497,7 +5497,7 @@
 		)
 		(uuid "6268b691-b846-494b-b0c5-59cd74165c93")
 	)
-	(hierarchical_label "A[19..0]"
+	(hierarchical_label "A[2..0]"
 		(shape input)
 		(at 86.36 102.87 180)
 		(fields_autoplaced yes)

@@ -396,10 +396,6 @@
       "floppy"
     ],
     [
-      "10d96c99-6c47-4ff2-8f09-d84fcc76eff9",
-      "timer"
-    ],
-    [
       "1a7f8631-20f0-471d-ab8f-15a03c343af4",
       "pio"
     ],
@@ -408,8 +404,16 @@
       "vga"
     ],
     [
+      "7f908845-99aa-4c65-bd74-eb161c1029c6",
+      "clock"
+    ],
+    [
       "0bc6fd8f-001b-40d5-aa7a-728fb33c946c",
       "sound"
+    ],
+    [
+      "4f3a94dd-6ba3-4d57-a50e-f1d8e3084925",
+      "keyboard"
     ]
   ],
   "text_variables": {}
