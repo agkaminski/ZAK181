@@ -1263,6 +1263,108 @@
 				)
 			)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim yes)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1505,16 +1607,10 @@
 		(uuid "42f80975-ff56-4b5a-8246-7cb5b5f49e5c")
 	)
 	(junction
-		(at 85.09 87.63)
+		(at 85.09 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5bf858cd-c891-4052-894b-4353f0cac769")
-	)
-	(junction
-		(at 87.63 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "776d0973-dea4-4bd1-b03e-f106a4bb5ef5")
+		(uuid "720f70e9-a8a7-444b-9d2c-3923acf97925")
 	)
 	(junction
 		(at 137.16 87.63)
@@ -1533,6 +1629,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "872e1eba-4d33-44e5-834b-5623888e9a74")
+	)
+	(junction
+		(at 87.63 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93c2aaca-8269-415c-9fbd-d12561c84f3b")
 	)
 	(junction
 		(at 137.16 24.13)
@@ -1640,6 +1742,16 @@
 			(type default)
 		)
 		(uuid "02d4a5a0-0af0-41f9-b365-6f130f4f5941")
+	)
+	(bus
+		(pts
+			(xy 85.09 90.17) (xy 134.62 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "06318e7e-ce4f-4b0c-8f0a-7d4a57368609")
 	)
 	(wire
 		(pts
@@ -1991,16 +2103,6 @@
 		)
 		(uuid "37f3b1e5-c336-4d39-9584-5f9479f7c06c")
 	)
-	(bus
-		(pts
-			(xy 85.09 114.3) (xy 92.71 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "390b772f-499d-49b9-aae2-cf644bbe0031")
-	)
 	(wire
 		(pts
 			(xy 110.49 54.61) (xy 102.87 54.61)
@@ -2010,16 +2112,6 @@
 			(type default)
 		)
 		(uuid "39a34b6e-ef86-4913-bc02-904736cf6afa")
-	)
-	(bus
-		(pts
-			(xy 134.62 90.17) (xy 87.63 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "39afc052-f1b6-4aea-be0d-f1a4c3644741")
 	)
 	(bus
 		(pts
@@ -2091,6 +2183,26 @@
 		)
 		(uuid "41d321ac-ca6b-48cd-9e1e-392faf7499c0")
 	)
+	(bus
+		(pts
+			(xy 87.63 87.63) (xy 87.63 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "41f3cf7d-adfa-4a04-aca6-47294ee85b79")
+	)
+	(bus
+		(pts
+			(xy 92.71 114.3) (xy 85.09 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "436707f3-514f-45d9-a1c5-3d4c4c2463b9")
+	)
 	(wire
 		(pts
 			(xy 114.3 45.72) (xy 114.3 55.88)
@@ -2143,7 +2255,7 @@
 	)
 	(bus
 		(pts
-			(xy 87.63 90.17) (xy 45.72 90.17)
+			(xy 45.72 90.17) (xy 85.09 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2661,16 +2773,6 @@
 		)
 		(uuid "9a61ec75-36a9-4e84-ba74-afa09e78b617")
 	)
-	(bus
-		(pts
-			(xy 137.16 87.63) (xy 85.09 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9abf8b63-9e64-4cc8-80fe-869a54b2563e")
-	)
 	(wire
 		(pts
 			(xy 77.47 128.27) (xy 92.71 128.27)
@@ -2761,16 +2863,6 @@
 		)
 		(uuid "a445346d-a71e-4675-8d59-6288ac5ddb9a")
 	)
-	(bus
-		(pts
-			(xy 85.09 87.63) (xy 43.18 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5b8b586-bde4-4bf6-a40b-a9943a39e29f")
-	)
 	(wire
 		(pts
 			(xy 224.79 125.73) (xy 242.57 125.73)
@@ -2821,6 +2913,16 @@
 		)
 		(uuid "b13c8caa-339f-4543-a58f-86b4e1d3cb83")
 	)
+	(bus
+		(pts
+			(xy 43.18 87.63) (xy 87.63 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3217456-73cc-4005-9e1d-22a5d243d814")
+	)
 	(wire
 		(pts
 			(xy 93.98 43.18) (xy 105.41 43.18)
@@ -2850,6 +2952,16 @@
 			(type default)
 		)
 		(uuid "b4b3afcb-cdeb-4360-afa5-26f5c9dc7d1c")
+	)
+	(bus
+		(pts
+			(xy 87.63 87.63) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6328f20-1d12-4ec7-ae9c-519dd8e1406c")
 	)
 	(wire
 		(pts
@@ -3031,6 +3143,16 @@
 		)
 		(uuid "c6dc3eb2-49aa-4ca2-a82d-3d2d4d78fd2e")
 	)
+	(bus
+		(pts
+			(xy 85.09 90.17) (xy 85.09 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c79c5bb8-68c3-48a8-8b24-a8f4d91ac45f")
+	)
 	(wire
 		(pts
 			(xy 57.15 66.04) (xy 69.85 66.04)
@@ -3151,16 +3273,6 @@
 		)
 		(uuid "d947d3fb-101a-4968-b3da-16afd4c6f12a")
 	)
-	(bus
-		(pts
-			(xy 87.63 90.17) (xy 87.63 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9e11568-404c-4a9f-82d4-20ddc4f05278")
-	)
 	(wire
 		(pts
 			(xy 140.97 180.34) (xy 36.83 180.34)
@@ -3280,16 +3392,6 @@
 			(type default)
 		)
 		(uuid "f34933d8-36c5-4d27-a778-eff81199a803")
-	)
-	(bus
-		(pts
-			(xy 85.09 87.63) (xy 85.09 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f3d23d43-6967-4ca6-b43f-cbe24d105a98")
 	)
 	(bus
 		(pts
@@ -3457,6 +3559,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 240.03 44.45 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1a0b8592-6477-42c0-b183-85ed59e701ef")
+		(property "Reference" "H2"
+			(at 242.57 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 242.57 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 240.03 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 240.03 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be846281-018b-4174-b431-d8ccdbac72f2")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 201.93 34.29 0)
 		(unit 1)
@@ -3587,6 +3756,140 @@
 			(project ""
 				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 240.03 30.48 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "659b91c5-92f5-4f79-a1c4-739a64d61943")
+		(property "Reference" "H1"
+			(at 242.57 27.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 242.57 30.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 240.03 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 240.03 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d85c72ba-6509-4947-8653-78fe9471a384")
+		)
+		(instances
+			(project ""
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 240.03 58.42 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "70a0b0a6-f161-4314-b8b3-6272213e5ce2")
+		(property "Reference" "H3"
+			(at 242.57 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 242.57 58.4199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 240.03 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8d0eade0-03cb-4be8-a96c-1eca2ed77137")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -3729,6 +4032,205 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 240.03 74.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a1b2c983-b869-47a9-8a60-85a4b5ecfc0f")
+		(property "Reference" "#PWR0103"
+			(at 240.03 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c594cebe-d84a-44eb-869c-8de9741c845b")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "#PWR0103")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 46.99 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3caba5c-65c6-4189-9fab-d49053386baf")
+		(property "Reference" "#PWR0101"
+			(at 240.03 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ac5f122e-88c7-48e2-b7f9-16c6be681d4c")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "#PWR0101")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 240.03 72.39 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b6d70e5a-d7d3-4789-9020-6d3a9397eb47")
+		(property "Reference" "H4"
+			(at 242.57 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 242.57 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 240.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 240.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 240.03 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8872a2cd-c06e-4fb8-8362-affdd8d446ea")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 215.9 34.29 0)
 		(unit 1)
@@ -3859,6 +4361,138 @@
 			(project "zak180"
 				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
 					(reference "R38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5543912-6bd4-4652-b554-6d3d887a90b5")
+		(property "Reference" "#PWR0104"
+			(at 240.03 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e8a07208-ef13-4dca-bf9c-331c3d4c1d4d")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "#PWR0104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 240.03 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e572711c-c9eb-4751-868d-1c149ac1300d")
+		(property "Reference" "#PWR0102"
+			(at 240.03 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 240.03 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 240.03 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68f5ad4f-f057-45bd-bc45-de560d1ec005")
+		)
+		(instances
+			(project "zak180"
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d"
+					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
@@ -4255,7 +4889,7 @@
 				)
 				(justify left)
 			)
-			(uuid "1f3f25a6-76d0-4da9-9324-7cdd2bf45b6f")
+			(uuid "c40dda60-e592-495e-bbd6-e1580039d164")
 		)
 		(instances
 			(project "zak180"
@@ -4323,7 +4957,7 @@
 				)
 				(justify left)
 			)
-			(uuid "16ab2ff5-cfe6-4db3-aa05-a59bb35a576a")
+			(uuid "39470550-425b-408b-af83-6cff1c837e8e")
 		)
 		(instances
 			(project "zak180"
@@ -4541,16 +5175,6 @@
 			)
 			(uuid "4044a76b-d9c2-42e4-89af-72fdb2bf9104")
 		)
-		(pin "A[2..0]" input
-			(at 140.97 111.76 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "32b69025-3be1-492f-b32a-691f1e832e5d")
-		)
 		(pin "DRQ" output
 			(at 140.97 129.54 180)
 			(effects
@@ -4560,6 +5184,16 @@
 				(justify left)
 			)
 			(uuid "683395da-837b-45ae-8e71-9316135bba61")
+		)
+		(pin "A[2..0]" input
+			(at 140.97 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "3551119c-56ed-408e-a47f-d0594497f970")
 		)
 		(instances
 			(project "zak180"
@@ -4845,16 +5479,6 @@
 			)
 			(uuid "154acf2c-a301-4ffb-b52a-a787c38e8380")
 		)
-		(pin "A[12..0]" input
-			(at 242.57 111.76 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "7ed1934f-e947-4a29-90d5-f831831db04e")
-		)
 		(pin "ROMSEL[1..0]" input
 			(at 242.57 128.27 180)
 			(effects
@@ -4874,6 +5498,16 @@
 				(justify right)
 			)
 			(uuid "82bb4cad-ee85-4a71-b770-984aa1b25bcd")
+		)
+		(pin "A[12..0]" input
+			(at 242.57 111.76 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "c80fbd33-6b95-4fad-8190-8c7eb6b485a8")
 		)
 		(instances
 			(project "zak180"
