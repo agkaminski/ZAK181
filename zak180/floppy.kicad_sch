@@ -3847,12 +3847,6 @@
 		(uuid "128ae4d8-8579-429a-9df1-712defd9923f")
 	)
 	(junction
-		(at 102.87 127)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "141e4da1-9cfb-4899-82fe-1a9f0dbd1c3e")
-	)
-	(junction
 		(at 219.71 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4043,6 +4037,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f843e0c3-1b71-4d09-9473-7b4ed161e966")
+	)
+	(junction
+		(at 105.41 134.62)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fa0470d7-8fd3-4847-ae7a-3b04d076f2a9")
 	)
 	(junction
 		(at 129.54 151.13)
@@ -4249,7 +4249,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 132.08) (xy 102.87 127)
+			(xy 102.87 125.73) (xy 102.87 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4306,16 +4306,6 @@
 			(type default)
 		)
 		(uuid "12f3d701-b397-4e87-a303-ada7a361cee7")
-	)
-	(wire
-		(pts
-			(xy 102.87 127) (xy 102.87 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1414dcfa-bca2-4b53-a0d4-0ae2092550a8")
 	)
 	(wire
 		(pts
@@ -4566,16 +4556,6 @@
 			(type default)
 		)
 		(uuid "3bc12df8-8fd5-4694-a7db-633ef6b1cfdf")
-	)
-	(wire
-		(pts
-			(xy 102.87 127) (xy 106.68 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3c94655e-41c2-46a3-a5d4-0923e5898f5b")
 	)
 	(wire
 		(pts
@@ -5129,6 +5109,16 @@
 	)
 	(wire
 		(pts
+			(xy 105.41 134.62) (xy 105.41 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "997a5068-fd98-438d-af54-8eb377c82b11")
+	)
+	(wire
+		(pts
 			(xy 219.71 99.06) (xy 219.71 104.14)
 		)
 		(stroke
@@ -5356,6 +5346,16 @@
 			(type default)
 		)
 		(uuid "b1147e11-a3ef-4b41-b70b-efe98ad59bf3")
+	)
+	(wire
+		(pts
+			(xy 105.41 127) (xy 106.68 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b16d6869-be44-4534-98dc-fbed260dc043")
 	)
 	(wire
 		(pts
@@ -5889,6 +5889,25 @@
 		)
 		(uuid c0516b5c-9779-41df-a0c9-8cabc7b673c6)
 	)
+	(text_box "Ident/MFM\n\n00 - invalid\n01 - AT mode\n10 - Model 30\n11 - PS/2\n\nPS/2 mode selected"
+		(exclude_from_sim no)
+		(at 43.18 86.36 0)
+		(size 22.86 17.78)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "9afa2b7c-91eb-4f49-b9bf-9fea63cc5a99")
+	)
 	(text "Only single 5V supply\nfloopy drives supported"
 		(exclude_from_sim no)
 		(at 231.648 128.016 0)
@@ -6117,7 +6136,7 @@
 		(uuid "d9b9d8ae-66a3-46b9-9f66-567201a4b5c9")
 	)
 	(hierarchical_label "DRQ"
-		(shape input)
+		(shape output)
 		(at 68.58 114.3 180)
 		(fields_autoplaced yes)
 		(effects
