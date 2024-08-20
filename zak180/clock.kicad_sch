@@ -1686,12 +1686,6 @@
 		(uuid "cbfab62f-a346-4a24-8412-db9021f06931")
 	)
 	(junction
-		(at 163.83 124.46)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d8419f32-565b-4fff-b152-5431c096c987")
-	)
-	(junction
 		(at 120.65 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1726,6 +1720,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eaed5670-fc3d-49e3-9077-52f773388a59")
+	)
+	(junction
+		(at 152.4 124.46)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efb02ab7-f9b0-4ce4-8266-e2e1a8bb2a80")
 	)
 	(junction
 		(at 139.7 54.61)
@@ -1841,16 +1841,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 124.46) (xy 163.83 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19d7c9a6-d545-43c9-9ec9-02feeaca3896")
-	)
-	(wire
-		(pts
 			(xy 149.86 107.95) (xy 172.72 107.95)
 		)
 		(stroke
@@ -1858,6 +1848,16 @@
 			(type default)
 		)
 		(uuid "202fbcf3-f4e0-4e79-950e-6398981ac801")
+	)
+	(wire
+		(pts
+			(xy 152.4 104.14) (xy 152.4 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21107d64-3f2e-4684-a21e-10c00922cd16")
 	)
 	(wire
 		(pts
@@ -1961,16 +1961,6 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 130.81) (xy 179.07 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59679f7b-b360-4aca-86cc-33d9d3e700b4")
-	)
-	(wire
-		(pts
 			(xy 139.7 52.07) (xy 139.7 54.61)
 		)
 		(stroke
@@ -2001,7 +1991,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 124.46) (xy 163.83 124.46)
+			(xy 162.56 124.46) (xy 165.1 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2051,6 +2041,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 124.46) (xy 154.94 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80be81da-9261-44d3-96a6-25c1906bd851")
+	)
+	(wire
+		(pts
 			(xy 139.7 54.61) (xy 140.97 54.61)
 		)
 		(stroke
@@ -2078,16 +2078,6 @@
 			(type default)
 		)
 		(uuid "876aff5a-dc65-4672-a2cf-4739d9035572")
-	)
-	(wire
-		(pts
-			(xy 163.83 124.46) (xy 165.1 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c897c06-9e30-4611-a4a0-1c4b35cc92f4")
 	)
 	(wire
 		(pts
@@ -2381,6 +2371,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 104.14) (xy 152.4 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3158dc8-5637-4903-997f-e4511067758d")
+	)
+	(wire
+		(pts
 			(xy 127 81.28) (xy 127 69.85)
 		)
 		(stroke
@@ -2441,7 +2441,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 124.46) (xy 154.94 124.46)
+			(xy 147.32 124.46) (xy 152.4 124.46)
 		)
 		(stroke
 			(width 0)
@@ -2495,7 +2495,7 @@
 	)
 	(hierarchical_label "RST"
 		(shape output)
-		(at 179.07 130.81 0)
+		(at 177.8 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
