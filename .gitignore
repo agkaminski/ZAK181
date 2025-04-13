@@ -15,3 +15,6 @@
 *.lib
 fp-info-cache
 *.kicad_prl
+*.ZEX
+*.IMG
+*.LNK
