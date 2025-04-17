@@ -21,11 +21,34 @@ Work in progress.
 
 ## Software features
 
-ROM bootloader functions to load the kernel image from the 1.44 MB 3.5" FDD.
-The kernel will a multi-tasking, preeptive in a monolithic architecture, with
+ROM bootloader functions solely to load the kernel image from the 1.44 MB 3.5"
+FDD that is stored in `/BOOT/KERNEL.IMG` file on FAT12 file system.
+The kernel is a multi-tasking, preeptive, of monolithic architecture, with
 UN\*X-like features (not even close to the full POSIX compability). Hopefully,
 it will be possible to port some UN\*X applications (like vi), although limited
-user process address space may be an obstacle (56 KB + 4 KB of stack).
+user process address space may present an obstacle (56 KB + 4 KB of stack).
+
+## Boot
+
+The boot process is somewhat complicated due to the limited nature of the Z180
+MMU.
+
+First the bootloader copies itself to the high RAM, configures the MMU to divide
+the address space into 3 regions and continues execution from the Common 1 area.
+This enables the bootloader to disable ROM and allow the computer to access the
+low RAM, that was previously occupied by ROM - this is the place kernel will be
+loaded into. The kernel image is then loaded from the floppy disk from a file
+`/BOOT/KERNEL.IMG` that resides on a FAT12 filesystem. After that the kernel is
+executed.
+
+The kernel reconfigures the MMU again to create a separate stack area and a
+"window" to access arbitrary physical memory. After initialization of all kernel
+subsystems, the first application is executed - init process, located at
+`/BOOT/INIT.ZEX'.
+
+Init process executes a simple script located at `/BOOT/INIT.INI` that setups
+the console (stdin, stdout, stderr) and executes next processes - for now only
+a shell `zesh`.
 
 ## Memory map
 
@@ -42,7 +65,7 @@ user process address space may be an obstacle (56 KB + 4 KB of stack).
 | Start | End  | Description             |
 |-------|------|-------------------------|
 | 0x00  | 0x3F | Z180 internal I/O       |
-| 0x40  | 0x5F | VBLANK IRQ acknowlage   |
+| 0x40  | 0x5F | VBLANK IRQ acknowledge  |
 | 0x60  | 0x7F | ROM disable control     |
 | 0x80  | 0x9F | Keyboard                |
 | 0xA0  | 0xBF | Z80 PIO (user port)     |
@@ -85,11 +108,7 @@ Collection of useful datasheets, might be removed in the future.
 
 #### bootloader
 
-Source code of a simple EPROM bootloader. It prepares the platform, initializes
-FDD and fetches the kernel image from the `/BOOT/KERNEL.IMG` file. Kernel is
-loaded to the start of the physical address space (0x00000 onward, variable
-size). Entry point of the kernel is assumed to be at the reset vector (i.e.
-address 0x0000).
+Source code of a bootloader ROM that is located on the internal EPROM memory.
 
 #### driver
 
@@ -105,22 +124,36 @@ This includes:
 
 #### filesystem
 
-FAT12 read/write driver. Many characterics of the 1.44 MB floppy FAT12 variant
-are hardcoded, with no current plans of generalization. LRU sector cache is
-planned.
+Legacy FAT12 implementation that is used by the bootloader. To be replaced with
+the implementation used by the kernel.
 
 #### kernel
 
 Source code of the kernel of the computer operating system.
+
+#### rootfs
+
+Root filesystem skeleton. Populated with static files (e.g. `INIT.INI`) and
+files created during firmware compilation. Later used to prepare a floopy disk.
 
 #### test
 
 Simple dead or alive SBC test. All it does is writing to the ASCI1 (USB-C) 
 at 19200 bn1.
 
+#### usr
+
+User space programs. This includes `init` process, `zesh` shell, utilities and 
+miscellaneous applications. 
+
 #### build.sh
 
 Script to build all components of the firmware.
+
+#### flash.sh
+
+Builds the firmware (by invoking `build.sh`) and copies the root file system
+structure to the floopy disk.
 
 ### keyboard2
 
