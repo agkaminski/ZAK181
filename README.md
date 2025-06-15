@@ -1,19 +1,17 @@
-# ZAK180 computer
+# ZAK181 computer
 
-<img src="img/top.png">
-
-<img src="img/bottom.png">
+Work in progress.
 
 ## Hardware features
 
 - Z180 CPU,
 - 1 MB of static RAM,
 - 16 KB bootloader ROM,
-- Floppy disk drive,
+- Floppy disk drive (?),
 - 16 bit GPIO user port,
 - 2 UARTs: USB-C and RS232,
 - AY-3-8912 sound,
-- 80x60 B&W text mode VGA output,
+- 80x60 8-color text mode VGA output,
 - custom Cherry-MX mechanical keyboard,
 - USB-C powered.
 
