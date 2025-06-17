@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicic>
+  <database type="LOGIC">
+    <custom name="Logic Ic">
+      <ic name="ZAK181MD" type="5" voltage="5V" pins="20">
+		<!-- NC A19 A18 A17 A16 A15 A14 A13 /MREQ GND DAT /RAM0 /ROM /ROMCTRL NC /RST ROMDIS /VRAM /RAM1 VCC -->
+		<!-- Reset -->
+		<vector id="00"> X X X X X X X X 1 G X X X 1 X 0 X X X V </vector>
+
+		<!-- Nothing selected -->
+		<vector id="01"> X X X X X X X X 1 G X H H 1 X 1 L H H V </vector>
+
+		<!-- Select VRAM -->
+		<vector id="02"> X 1 1 1 1 1 1 1 0 G X H H 1 X 1 L L H V </vector>
+
+		<!-- Select ROM -->
+		<vector id="03"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
+
+		<!-- Select RAM0 -->
+		<vector id="04"> X 0 0 0 0 0 1 1 0 G X L H 1 X 1 L H H V </vector>
+
+		<!-- Select RAM1 -->
+		<vector id="05"> X 1 0 0 0 0 1 1 0 G X H H 1 X 1 L H L V </vector>
+
+		<!-- Disable ROM -->
+		<vector id="06"> X X X X X X X X 1 G 0 H H 0 X 1 L H H V </vector>
+
+		<!-- Select ROM - should give RAM0 instead -->
+		<vector id="07"> X 0 0 0 0 0 0 0 0 G X L H 1 X 1 H H H V </vector>
+
+		<!-- Reset -->
+		<vector id="08"> X X X X X X X X 1 G X X X 1 X 0 L X X V </vector>
+
+		<!-- Select ROM -->
+		<vector id="09"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
+
+		<!-- Disable ROM -->
+		<vector id="10"> X X X X X X X X 1 G 0 H H 0 X 1 L H H V </vector>
+
+		<!-- Select ROM - should give RAM0 instead -->
+		<vector id="11"> X 0 0 0 0 0 0 0 0 G X L H 1 X 1 H H H V </vector>
+
+		<!-- Enable ROM -->
+		<vector id="12"> X X X X X X X X 1 G 1 H H 1 X 0 L H H V </vector>
+
+		<!-- Select ROM -->
+		<vector id="13"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
+      </ic>
+    </custom>
+  </database>
+</logicic>
