@@ -2341,7 +2341,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x06_Odd_Even"
+		(property "Value" "Keyboard"
 			(at 134.62 83.82 0)
 			(effects
 				(font

@@ -8518,7 +8518,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2764"
+		(property "Value" "27C64"
 			(at 172.3741 34.29 0)
 			(effects
 				(font
@@ -9340,7 +9340,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "HM62256BLP"
+		(property "Value" "62256"
 			(at 91.0433 43.18 0)
 			(effects
 				(font

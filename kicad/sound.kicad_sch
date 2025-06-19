@@ -5663,7 +5663,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "PSG_AY-3-8912"
+		(property "Value" "AY-3-8912"
 			(at 133.0041 69.85 0)
 			(effects
 				(font
