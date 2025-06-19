@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "60f7f634-189b-46f6-8aaf-4d8a5b09354f")
 	(paper "A4")
+	(title_block
+		(title "Z180 CPU")
+		(date "2025-06-18")
+		(rev "A")
+		(company "A.K.")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC138"
 			(exclude_from_sim no)
@@ -3370,6 +3376,26 @@
 		)
 		(uuid "cfe1ff59-7b4e-4727-b8c8-adad42ae47be")
 	)
+	(text_box "GAL16V8\nZAK181MD\n\nNC A19 A18 A17 A16 A15 A14 A13 /MREQ GND\nDAT /RAM0 /ROM /ROMCTRL NC /RST ROMDIS /VRAM /RAM1 VCC\n\nVRAM = A13 * A14 * A15 * A16 * A17 * A18 * A19 * MREQ\nROM = /A14 * /A15 * /A16 * /A17 * /A18 * /A19 * MREQ * /ROMDIS\nRAM0 = /VRAM * /ROM * MREQ * /A19\nRAM1 = /VRAM * /ROM * MREQ * A19\n\nROMDIS = /RST * ROMCTRL * DAT + /RST * /ROMCTRL * ROMDIS\n\nDESCRIPTION\n\nZAK181 SBC Memory decoder\n"
+		(exclude_from_sim no)
+		(at 199.39 115.57 0)
+		(size 73.66 34.29)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "55148a95-c7c7-46e7-bcf1-c606f7f960a9")
+	)
 	(junction
 		(at 154.94 109.22)
 		(diameter 0)
@@ -6113,7 +6139,7 @@
 		)
 		(uuid "0b6def73-6a9f-414c-87a6-09f7de17ba12")
 	)
-	(hierarchical_label "~{FLOPPY}"
+	(hierarchical_label "~{CF}"
 		(shape output)
 		(at 196.85 80.01 0)
 		(effects

@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "4211408b-1433-4e1d-b956-b2161f76181f")
 	(paper "A4")
+	(title_block
+		(title "Keyboard")
+		(date "2025-06-18")
+		(rev "A")
+		(company "A.K.")
+	)
 	(lib_symbols
 		(symbol "74xx:74HC244"
 			(exclude_from_sim no)

@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "c3c8daca-2002-4293-8502-82eca62c9b53")
 	(paper "A4")
+	(title_block
+		(title "User port")
+		(date "2025-06-18")
+		(rev "A")
+		(company "A.K.")
+	)
 	(lib_symbols
 		(symbol "Connector:DB25_Receptacle_MountingHoles"
 			(pin_names
@@ -4281,7 +4287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-25_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+		(property "Footprint" "Connector_Dsub:DSUB-25_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset4.94mm"
 			(at 198.12 96.52 0)
 			(effects
 				(font

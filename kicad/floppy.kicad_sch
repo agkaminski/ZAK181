@@ -4,6 +4,11 @@
 	(generator_version "9.0")
 	(uuid "a1e0fe04-dbc9-4183-987a-5de4b7db6197")
 	(paper "A4")
+	(title_block
+		(date "2025-06-18")
+		(rev "A")
+		(company "A.K.")
+	)
 	(lib_symbols
 		(symbol "82077AA:82077AA"
 			(pin_names
