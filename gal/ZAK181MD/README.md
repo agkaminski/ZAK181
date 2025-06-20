@@ -7,6 +7,32 @@ circuit.
 Chip is designed in GALasm that can be compiled to JEDEC via [Galette](https://github.com/simon-frankau/galette) -
 source is in `zak181md.pld` file. Ready to program JEDEC file is provided in `zak181md.jed` file.
 
+## Pinout
+
+```
+      -------\___/-------
+   NC |  1           20 | VCC
+      |                 |
+  A19 |  2           19 | /RAM1
+      |                 |
+  A18 |  3           18 | /VRAM
+      |                 |
+  A17 |  4           17 | ROMDIS
+      |                 |
+  A16 |  5           16 | /RST
+      |                 |
+  A15 |  6           15 | NC
+      |                 |
+  A14 |  7           14 | /ROMCTRL
+      |                 |
+  A13 |  8           13 | /ROM
+      |                 |
+/MREQ |  9           12 | /RAM0
+      |                 |
+  GND | 10           11 | DAT
+      -------------------
+```
+
 ## Verification
 
 GAL can be programmed and verified (test vectors functional test) via TL866 and [minipro](https://gitlab.com/DavidGriffith/minipro).

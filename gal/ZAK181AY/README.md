@@ -8,6 +8,32 @@ and provides a single inverter for external use.
 Chip is designed in GALasm that can be compiled to JEDEC via [Galette](https://github.com/simon-frankau/galette) -
 source is in `zak181ay.pld` file. Ready to program JEDEC file is provided in `zak181ay.jed` file.
 
+## Pinout
+
+```
+    -------\___/-------
+CLK |  1           20 | VCC
+    |                 |
+ A0 |  2           19 | C0
+    |                 |
+/CS |  3           18 | C1
+    |                 |
+/RD |  4           17 | C2
+    |                 |
+/WR |  5           16 | BC1
+    |                 |
+ NC |  6           15 | BDIR
+    |                 |
+ NC |  7           14 | NC
+    |                 |
+ NC |  8           13 | COUT
+    |                 |
+  A |  9           12 | /Y
+    |                 |
+GND | 10           11 | /OE
+    -------------------
+```
+
 ## Verification
 
 GAL can be programmed and verified (test vectors functional test) via TL866 and [minipro](https://gitlab.com/DavidGriffith/minipro).
