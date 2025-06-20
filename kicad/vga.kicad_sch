@@ -7,7 +7,7 @@
 	(title_block
 		(title "VGA")
 		(date "2025-06-18")
-		(rev "A")
+		(rev "B")
 		(company "A.K.")
 	)
 	(lib_symbols
@@ -3013,10 +3013,6 @@
 		(uuid "bca8b0f9-2b8c-414b-aaab-c21170802681")
 	)
 	(no_connect
-		(at 102.87 102.87)
-		(uuid "c3cb7f83-52f0-4ed1-9faf-61efce489771")
-	)
-	(no_connect
 		(at 250.19 85.09)
 		(uuid "d35b9ce4-19a6-4d7d-a43c-7a6a0801918d")
 	)
@@ -4746,6 +4742,16 @@
 		)
 		(uuid "8b2e4d14-4818-4bc8-b8dc-ccc251d421c7")
 	)
+	(wire
+		(pts
+			(xy 92.71 102.87) (xy 102.87 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d53f892-5f47-466e-b15d-a82f460b20e9")
+	)
 	(bus
 		(pts
 			(xy 161.29 78.74) (xy 161.29 92.71)
@@ -5675,6 +5681,16 @@
 			(justify right bottom)
 		)
 		(uuid "1a001385-1b21-4d97-8a12-bb05a5a66a6a")
+	)
+	(label "~{SHLOAD}"
+		(at 92.71 102.87 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1af7049a-5100-41fd-b3f2-3a1781d3e703")
 	)
 	(label "SCROLL4"
 		(at 92.71 161.29 0)

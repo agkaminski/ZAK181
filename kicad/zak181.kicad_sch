@@ -7,7 +7,7 @@
 	(title_block
 		(title "ZAK181 Single Board Computer")
 		(date "2025-06-18")
-		(rev "A")
+		(rev "B")
 		(company "A.K.")
 	)
 	(lib_symbols
