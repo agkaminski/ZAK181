@@ -2250,20 +2250,21 @@
 			(embedded_fonts no)
 		)
 	)
-	(text_box "bdir = !(~{wr} | ~{cs})\nbc1 = !(!a0 | ~{cs} | (~{rd} & ~{wr}))\n\n~{cs} ~{rd} ~{wr} A0  BDIR BC1\n0010         01 - READ\n0011         00 - INACTIVE\n0100         11 - LATCH\n0101         10 - WRITE"
+	(text_box "bdir = !(~{wr} | ~{cs})\nbc1 = !(!a0 | ~{cs} | (~{rd} & ~{wr}))\n\n~{cs} ~{rd} ~{wr} A0  | BDIR BC1\n0  0  1  0   | 0    1 - READ\n0  0  1  1   | 0    0 - INACTIVE\n0  1  0  0   | 1    1 - LATCH\n0  1  0  1   | 1    0 - WRITE"
 		(exclude_from_sim no)
 		(at 71.12 138.43 0)
 		(size 40.64 17.78)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
-			(type default)
+			(type solid)
 		)
 		(fill
 			(type none)
 		)
 		(effects
 			(font
+				(face "DM Mono")
 				(size 1.27 1.27)
 			)
 			(justify left top)
