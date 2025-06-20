@@ -5,7 +5,7 @@ and generated chips selects for ROM, RAMs and video RAM. Handles ROM disable
 circuit.
 
 Chip is designed in GALasm that can be compiled to JEDEC via [Galette](https://github.com/simon-frankau/galette) -
-source is in `decoder.pld` file. Ready to program JEDEC file is provided in `decoder.jed` file.
+source is in `zak181md.pld` file. Ready to program JEDEC file is provided in `zak181md.jed` file.
 
 ## Verification
 
@@ -14,7 +14,7 @@ GAL can be programmed and verified (test vectors functional test) via TL866 and 
 To program the chip (use appropriate chip designation):
 
 ```
-$ minipro -p GAL16V8D -w decoder.jed
+$ minipro -p GAL16V8D -w zak181md.jed
 ```
 
 Functional tests can be performed by:

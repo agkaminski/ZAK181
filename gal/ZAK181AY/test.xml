@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<logicic>
+	<database type="LOGIC">
+		<custom name="Logic Ic">
+			<ic name="ZAK181AY" type="5" voltage="5V" pins="20">
+			<!-- CLK A0 /CS /RD /WR NC NC NC A GND /OE /A COUT NC BDIR BC1 C2 C1 C0 VCC -->
+
+			<!-- Inverter -->
+			<vector id="00"> 0 X X X X X X X 0 G 0 H X X X X X X X V </vector>
+			<vector id="01"> 0 X X X X X X X 1 G 0 L X X X X X X X V </vector>
+
+			<!-- AY-3-8912 bus decoder -->
+			<vector id="02"> 0 0 0 0 0 X X X X G 0 X X X H H X X X V </vector>
+			<vector id="03"> 0 0 0 0 1 X X X X G 0 X X X L H X X X V </vector>
+			<vector id="04"> 0 0 0 1 0 X X X X G 0 X X X H H X X X V </vector>
+			<vector id="05"> 0 0 0 1 1 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="06"> 0 0 1 0 0 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="07"> 0 0 1 0 1 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="08"> 0 0 1 1 0 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="09"> 0 0 1 1 1 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="10"> 0 1 0 0 0 X X X X G 0 X X X H L X X X V </vector>
+			<vector id="11"> 0 1 0 0 1 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="12"> 0 1 0 1 0 X X X X G 0 X X X H L X X X V </vector>
+			<vector id="13"> 0 1 0 1 1 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="14"> 0 1 1 0 0 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="15"> 0 1 1 0 1 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="16"> 0 1 1 1 0 X X X X G 0 X X X L L X X X V </vector>
+			<vector id="17"> 0 1 1 1 1 X X X X G 0 X X X L L X X X V </vector>
+
+			<!-- Clock divider -->
+			<vector id="18"> 0 X X X X X X X X G 0 X H X X X H H H V </vector>
+			<vector id="19"> C X X X X X X X X G 0 X L X X X L L H V </vector>
+			<vector id="20"> C X X X X X X X X G 0 X L X X X L H L V </vector>
+			<vector id="21"> C X X X X X X X X G 0 X L X X X L H H V </vector>
+			<vector id="22"> C X X X X X X X X G 0 X L X X X H L L V </vector>
+			<vector id="23"> C X X X X X X X X G 0 X L X X X H L H V </vector>
+			<vector id="24"> C X X X X X X X X G 0 X L X X X H H L V </vector>
+			<vector id="25"> C X X X X X X X X G 0 X L X X X H H H V </vector>
+			<vector id="26"> C X X X X X X X X G 0 X H X X X L L L V </vector>
+			<vector id="27"> C X X X X X X X X G 0 X H X X X L L H V </vector>
+			<vector id="28"> C X X X X X X X X G 0 X H X X X L H L V </vector>
+			<vector id="29"> C X X X X X X X X G 0 X H X X X L H H V </vector>
+			<vector id="30"> C X X X X X X X X G 0 X H X X X H L L V </vector>
+			<vector id="31"> C X X X X X X X X G 0 X H X X X H L H V </vector>
+			<vector id="32"> C X X X X X X X X G 0 X H X X X H H L V </vector>
+			<vector id="33"> C X X X X X X X X G 0 X H X X X H H H V </vector>
+			</ic>
+		</custom>
+	</database>
+</logicic>

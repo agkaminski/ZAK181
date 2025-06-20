@@ -1,0 +1,19 @@
+GAL16V8
+ZAK181AY
+
+CLK  A0   /CS  /RD  /WR  NC   NC   NC   A    GND
+/OE  /Y   COUT NC   BDIR BC1  C2   C1   C0   VCC
+
+C0.R   = /C0
+C1.R   = /C1 * C0 +             C1 * /C0
+C2.R   = /C2 * C1 * C0 +        C2 * /C1 +   C2 * /C0
+COUT.R = /COUT * C2 * C1 * C0 + COUT * /C2 + COUT * /C1 + COUT * /C0
+
+BDIR   = WR * CS
+BC1    = CS * /A0 * WR + CS * /A0 * RD
+
+Y      = A
+
+DESCRIPTION
+
+ZAK181 SBC AY-3-8912 bus decoder
