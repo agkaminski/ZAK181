@@ -56,18 +56,21 @@ computer.
 
 KiCAD project of the computer's PCB.
 
-### vga
+### pld
 
-HDL of the VGA timing generator implemented in a XC95108 CPLD, tool to generate
-font ROM.
+Gateware of PLDs:
+
+- [vga](pld/vga/README.md),
+- [ZAK181MD](pld/ZAK181MD/README.md),
+- [ZAK181AY](pld/ZAK181AY/README.md).
 
 ### schematic.pdf
 
-Schematic of the computer in a friendly .pdf form.
+[Schematic](schematic.pdf) of the computer in a friendly .pdf form.
 
 ### 3dprint
 
-3D models designed for FDM priting.
+3D models designed for FDM 3D priting.
 
 ## License
 
