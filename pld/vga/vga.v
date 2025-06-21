@@ -112,7 +112,7 @@ always @(posedge pclk, negedge rst_n) begin
 		hsync_i <= 0;
 		hsync_n <= 0;
 	end else begin
-		if (col_i >= (640 + 16 + 8 - 2) && col_i < (640 + 16 + 8 + 96 - 2))
+		if (col_i >= (640 + 16 + 8 - 1) && col_i < (640 + 16 + 8 + 96 - 1))
 			hsync_i <= 1;
 		else
 			hsync_i <= 0;
@@ -153,7 +153,7 @@ always @(posedge pclk, negedge rst_n) begin
 end
 
 assign color = col_b[2];
-assign pload_n = ~color;
+assign pload_n = color;
 assign cload_n = shload_n;
 
 // character generator

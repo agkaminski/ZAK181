@@ -93,12 +93,18 @@ Target: XC95108, any speed, **not** XL version
 
 ## vga.v
 
-Implementation
+Implementation (Verilog).
+
+## vga.dig
+
+Test bench of sorts - uses [Digital](https://github.com/hneemann/Digital), which has a
+huge advantage over plain Verilog/VHDL based test bench - it can process generated VGA
+data and present it visually. It makes it a perfect tool for this kind of verification.
 
 ## vga.ucf
 
-Pinout constraints (ISE 14.7)
+Pinout constraints (ISE 14.7).
 
 ## vga.jed
 
-Bitstream ready to upload
+Bitstream ready to upload to the CPLD.
