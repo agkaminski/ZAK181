@@ -7,7 +7,7 @@ Work in progress.
 - Z180 CPU,
 - 1 MB of static RAM,
 - 16 KB bootloader ROM,
-- Floppy disk drive (?),
+- Comact Flash slot in True IDE mode,
 - 16 bit GPIO user port,
 - 2 UARTs: USB-C and RS232,
 - AY-3-8912 sound,
@@ -25,21 +25,21 @@ ZAKOS code repository is located [here](https://github.com/agkaminski/ZAKOS).
 |---------|---------|------------------------------------------|
 | 0x00000 | 0x03FFF | ROM, disabled after boot, after that RAM |
 | 0x04000 | 0xFDFFF | RAM                                      |
-| 0xFE000 | 0xFFFFF | Memory mapped I/O, VGA VRAM              |
+| 0xFC000 | 0xFFFFF | Memory mapped I/O, VGA VRAM              |
 
 ## I/O map
 
 8-bit I/O is used.
 
-| Start | End  | Description             |
-|-------|------|-------------------------|
-| 0x00  | 0x3F | Z180 internal I/O       |
-| 0x40  | 0x5F | VBLANK IRQ acknowledge  |
-| 0x60  | 0x7F | ROM disable control     |
-| 0x80  | 0x9F | Keyboard                |
-| 0xA0  | 0xBF | Z80 PIO (user port)     |
-| 0xC0  | 0xDF | AY-3-8912               |
-| 0xE0  | 0xFF | 82077 floppy controller |
+| Start | End  | Description            |
+|-------|------|------------------------|
+| 0x00  | 0x3F | Z180 internal I/O      |
+| 0x40  | 0x5F | VBLANK IRQ acknowledge |
+| 0x60  | 0x7F | ROM disable control    |
+| 0x80  | 0x9F | Keyboard               |
+| 0xA0  | 0xBF | Z80 PIO (user port)    |
+| 0xC0  | 0xDF | AY-3-8912              |
+| 0xE0  | 0xFF | Compact Flash          |
 
 ## Repository structure
 
@@ -58,7 +58,7 @@ KiCAD project of the computer's PCB.
 
 ### vga
 
-HDL of the VGA timing generator implemented in a XC9535 CPLD, tool to generate
+HDL of the VGA timing generator implemented in a XC95108 CPLD, tool to generate
 font ROM.
 
 ### schematic.pdf
