@@ -4930,7 +4930,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "781f0f40-9193-4b40-9f48-583afaa80eff")
 		(property "Reference" "U33"
 			(at 93.5833 88.9 0)
@@ -4941,8 +4940,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GAL16V8"
-			(at 93.5833 91.44 0)
+		(property "Value" "ZAK181AY (GAL16V8)"
+			(at 68.58 91.694 0)
 			(effects
 				(font
 					(size 1.27 1.27)
