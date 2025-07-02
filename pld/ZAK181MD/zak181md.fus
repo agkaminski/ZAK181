@@ -12,7 +12,7 @@ Pin 19 = /RAM1        XOR = 0   AC1 = 1
 
 Pin 18 = /VRAM        XOR = 0   AC1 = 1
   8  ---- ---- ---- ---- ---- ---- ---- ----
-  9  x--- x--- x--- x--- x--- x--- x--- -x--
+  9  x--- x--- x--- x--- x--- x--- ---- -x--
  10  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  11  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx
  12  xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx

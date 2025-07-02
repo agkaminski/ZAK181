@@ -12,39 +12,40 @@
 
 				<!-- Select VRAM -->
 				<vector id="02"> X 1 1 1 1 1 1 1 0 G X H H 1 X 1 L L H V </vector>
+				<vector id="03"> X 1 1 1 1 1 1 0 0 G X H H 1 X 1 L L H V </vector>
 
 				<!-- Select ROM -->
-				<vector id="03"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
+				<vector id="04"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
 
 				<!-- Select RAM0 -->
-				<vector id="04"> X 0 0 0 0 0 1 1 0 G X L H 1 X 1 L H H V </vector>
+				<vector id="05"> X 0 0 0 0 0 1 1 0 G X L H 1 X 1 L H H V </vector>
 
 				<!-- Select RAM1 -->
-				<vector id="05"> X 1 0 0 0 0 1 1 0 G X H H 1 X 1 L H L V </vector>
+				<vector id="06"> X 1 0 0 0 0 1 1 0 G X H H 1 X 1 L H L V </vector>
 
 				<!-- Disable ROM -->
-				<vector id="06"> X X X X X X X X 1 G 0 H H 0 X 1 L H H V </vector>
+				<vector id="07"> X X X X X X X X 1 G 0 H H 0 X 1 L H H V </vector>
 
 				<!-- Select ROM - should give RAM0 instead -->
-				<vector id="07"> X 0 0 0 0 0 0 0 0 G X L H 1 X 1 H H H V </vector>
+				<vector id="08"> X 0 0 0 0 0 0 0 0 G X L H 1 X 1 H H H V </vector>
 
 				<!-- Reset -->
-				<vector id="08"> X X X X X X X X 1 G X X X 1 X 0 L X X V </vector>
+				<vector id="09"> X X X X X X X X 1 G X X X 1 X 0 L X X V </vector>
 
 				<!-- Select ROM -->
-				<vector id="09"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
+				<vector id="10"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
 
 				<!-- Disable ROM -->
-				<vector id="10"> X X X X X X X X 1 G 0 H H 0 X 1 L H H V </vector>
+				<vector id="11"> X X X X X X X X 1 G 0 H H 0 X 1 L H H V </vector>
 
 				<!-- Select ROM - should give RAM0 instead -->
-				<vector id="11"> X 0 0 0 0 0 0 0 0 G X L H 1 X 1 H H H V </vector>
+				<vector id="12"> X 0 0 0 0 0 0 0 0 G X L H 1 X 1 H H H V </vector>
 
 				<!-- Enable ROM -->
-				<vector id="12"> X X X X X X X X 1 G 1 H H 1 X 0 L H H V </vector>
+				<vector id="13"> X X X X X X X X 1 G 1 H H 1 X 0 L H H V </vector>
 
 				<!-- Select ROM -->
-				<vector id="13"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
+				<vector id="14"> X 0 0 0 0 0 0 0 0 G X H L 1 X 1 L H H V </vector>
 			</ic>
 		</custom>
 	</database>
