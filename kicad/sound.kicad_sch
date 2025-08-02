@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Sound")
-		(date "2025-07-20")
-		(rev "C")
+		(date "2025-08-02")
+		(rev "D")
 		(company "A.K.")
 	)
 	(lib_symbols
@@ -1574,6 +1574,133 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:Speaker"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LS"
+				(at 1.27 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Speaker"
+				(at 1.27 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.254 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Speaker"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "speaker sound"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Speaker_0_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 1.016 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.016 1.27) (xy 3.556 3.81) (xy 3.556 -6.35) (xy 1.016 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Speaker_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Logic_Programmable:GAL16V8"
 			(pin_names
 				(offset 1.016)
@@ -2272,6 +2399,12 @@
 		(uuid "8ee1f3fc-5709-45cd-84df-7a921eb588a4")
 	)
 	(junction
+		(at 231.14 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "169f749f-1f37-42ce-8c96-d36110ee5cbc")
+	)
+	(junction
 		(at 77.47 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2288,6 +2421,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "625afe91-0f2b-4327-be26-cf037c81040d")
+	)
+	(junction
+		(at 232.41 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "803c62b1-7200-4e57-819c-00331cce7b96")
 	)
 	(junction
 		(at 173.99 81.28)
@@ -2697,6 +2836,16 @@
 		)
 		(uuid "31758420-e697-4c91-a424-54d41cf0ed9a")
 	)
+	(wire
+		(pts
+			(xy 232.41 83.82) (xy 233.68 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "344ff056-f213-44fc-8b16-a28041afbd36")
+	)
 	(bus
 		(pts
 			(xy 160.02 104.14) (xy 160.02 106.68)
@@ -2889,6 +3038,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 71.12) (xy 231.14 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75f4b87c-6070-45fd-a971-ae2496f1d5ec")
+	)
+	(wire
+		(pts
 			(xy 173.99 76.2) (xy 181.61 76.2)
 		)
 		(stroke
@@ -2969,7 +3128,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 83.82) (xy 233.68 83.82)
+			(xy 228.6 83.82) (xy 232.41 83.82)
 		)
 		(stroke
 			(width 0)
@@ -2986,6 +3145,16 @@
 			(type default)
 		)
 		(uuid "8b178ee4-b39a-4c5d-b4d8-f167a3f2e904")
+	)
+	(wire
+		(pts
+			(xy 232.41 83.82) (xy 232.41 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d69c4f6-2485-4636-ba2d-e548f1834eed")
 	)
 	(wire
 		(pts
@@ -3139,6 +3308,16 @@
 	)
 	(wire
 		(pts
+			(xy 232.41 73.66) (xy 234.95 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3b8c4e0-6988-4b69-86a2-269077268c70")
+	)
+	(wire
+		(pts
 			(xy 116.84 97.79) (xy 121.92 97.79)
 		)
 		(stroke
@@ -3176,6 +3355,16 @@
 			(type default)
 		)
 		(uuid "bd70182a-acf6-4214-b030-86a6d9ed8795")
+	)
+	(wire
+		(pts
+			(xy 231.14 71.12) (xy 231.14 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c18f66ae-e4bf-4531-83fb-d9eee2170aa0")
 	)
 	(wire
 		(pts
@@ -4517,6 +4706,76 @@
 			(project "zak180"
 				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d/0bc6fd8f-001b-40d5-aa7a-728fb33c946c"
 					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker")
+		(at 240.03 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4f7c6289-87d8-4de0-be40-40c0d43e165f")
+		(property "Reference" "LS1"
+			(at 245.11 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Speaker"
+			(at 245.11 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Buzzer_Beeper:MagneticBuzzer_StarMicronics_QMB-105"
+			(at 240.03 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 239.776 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Speaker"
+			(at 240.03 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cdc8be94-2243-4f3a-b2a8-48bea2baae05")
+		)
+		(pin "2"
+			(uuid "f2f03313-30a2-4004-870c-149b219212d6")
+		)
+		(instances
+			(project ""
+				(path "/ca48b56d-33a4-442b-b1b9-aaf2c2c8d68d/0bc6fd8f-001b-40d5-aa7a-728fb33c946c"
+					(reference "LS1")
 					(unit 1)
 				)
 			)

@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "User port")
-		(date "2025-07-20")
-		(rev "C")
+		(date "2025-08-02")
+		(rev "D")
 		(company "A.K.")
 	)
 	(lib_symbols
@@ -4287,7 +4287,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-25_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm"
+		(property "Footprint" "Connector_Dsub:DSUB-25_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 198.12 96.52 0)
 			(effects
 				(font

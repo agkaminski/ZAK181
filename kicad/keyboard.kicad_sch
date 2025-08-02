@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Keyboard")
-		(date "2025-07-20")
-		(rev "C")
+		(date "2025-08-02")
+		(rev "D")
 		(company "A.K.")
 	)
 	(lib_symbols

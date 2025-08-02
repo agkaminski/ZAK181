@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "UART")
-		(date "2025-07-20")
-		(rev "C")
+		(date "2025-08-02")
+		(rev "D")
 		(company "A.K.")
 	)
 	(lib_symbols
@@ -4505,7 +4505,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset9.90mm_Housed_MountingHolesOffset11.32mm"
+		(property "Footprint" "Connector_Dsub:DSUB-9_Pins_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
 			(at 186.69 67.31 0)
 			(effects
 				(font
