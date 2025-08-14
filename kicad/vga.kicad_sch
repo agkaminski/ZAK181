@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "VGA")
-		(date "2025-08-02")
-		(rev "D")
+		(date "2025-08-14")
+		(rev "E")
 		(company "A.K.")
 	)
 	(lib_symbols

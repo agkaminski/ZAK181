@@ -2,7 +2,7 @@
 "C10, C11, C12, C13, C16, C22, C23, C24, C25, C26, C32, C35, C36, C4, C40, C41, C42, C44, C5, C52, C53, C56, C57, C6, C7, C70, C72, C8, C9",C_Disc_D5.0mm_W2.5mm_P2.50mm,29,100n,
 C27,C_Disc_D5.0mm_W2.5mm_P2.50mm,1,47n,
 "C28, C29",CP_Radial_D6.3mm_P2.50mm,2,150u,
-"C30, C49, C50, C51",CP_Radial_D5.0mm_P2.50mm,4,10u,
+"C30, C49, C50, C51, C58",CP_Radial_D5.0mm_P2.50mm,5,10u,
 C33,C_Disc_D5.0mm_W2.5mm_P2.50mm,1,10n,
 "C38, C39",C_Disc_D5.0mm_W2.5mm_P2.50mm,2,22p,
 "C54, C55",CP_Radial_D10.0mm_P5.00mm,2,470u,
